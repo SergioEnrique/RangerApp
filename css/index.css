@@ -114,7 +114,11 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-
+img {
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
 
 
 
