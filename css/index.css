@@ -75,7 +75,7 @@ h1 {
     margin:0px;
     overflow:visible;
     padding:0px;
-    text-align:center;
+    text-align:left;
 }
 
 .event {
@@ -113,3 +113,24 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
