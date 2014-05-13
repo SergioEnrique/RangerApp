@@ -45,7 +45,6 @@
             <script>
              
             $('#formulario').submit(function() { 
-                
                  
                 // recolecta los valores que inserto el usuario
                 var datosUsuario = $("#nombredeusuario").val()
@@ -61,7 +60,7 @@
                     if(respuestaServer.validacion == "ok"){
                       
                         /// si la validacion es correcta, muestra la pantalla "home"
-                        $.mobile.changePage("#home")
+                        $.mobile.changePage("menu.html", "slide")
                       
                     }else{
                         // alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
