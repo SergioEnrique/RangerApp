@@ -29,7 +29,7 @@
     }
 });*/
 
-$('#map-page').bind('pageinit', function(event) {
+$('#map-page').live('pageshow', function(event) {
     var map = new GoogleMap();
     map.initialize();
 });
