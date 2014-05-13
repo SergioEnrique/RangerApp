@@ -29,31 +29,8 @@
     }
 });*/
 
+// Inicializar mapa
 $('#map-page').live('pageshow', function(event) {
     var map = new GoogleMap();
     map.initialize();
-    addMarkersToMap(map);
 });
-
-var addMarkersToMap = function(map){
-    var mapBounds = new google.maps.LatLngBounds(); // Para cargar Bundles
-    
-    var latitudeAndLongitudeOne = new google.maps.LatLng('19.0328754', '-98.2421974');
-
-    var markerOne = new google.maps.Marker({
-        position: latitudeAndLongitudeOne,
-        map: map
-    });
-
-    var latitudeAndLongitudeTwo = new google.maps.LatLng('19.0231492', '-98.2445106');
-
-    var markerOne = new google.maps.Marker({
-        position: latitudeAndLongitudeTwo,
-        map: map
-    });
-
-    mapBounds.extend(latitudeAndLongitudeOne);
-    mapBounds.extend(latitudeAndLongitudeTwo);
-    
-    map.fitBounds(mapBounds);
-}
