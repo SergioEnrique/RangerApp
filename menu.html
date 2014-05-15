@@ -2,37 +2,61 @@
 <html lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>jQuery Mobile Panel - Hongkiat.com</title>
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="css/jquery.mobile-1.4.2.min.js"></script>
+
+
+
+
+<title>Menú</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-<link rel="stylesheet" href="css/style.mobile.css" />
 <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
-<body>
-	<div class="demo-wrapper" data-role="page">
-        <!-- panel 01 -->
-        <div class="panel left" data-role="panel" data-position="left" data-display="push" id="panel-01">
-            <ul>
-                <li class="newsfeed"><a href="map.html" title="Ruta">Ruta</a></li>
-                <li class="profile"><a href="horario.html" title="Horarios">Horarios</a></li>
-                <li class="logout"><a href="index.html" title="Logout">Cerrar Sesión</a></li>
-            </ul>
+<body class="ui-mobile-viewport">
+    <div data-role="page" id="menu">
+        <div data-role="header">
+            <h1>Menú</h1>
         </div>
-		<div class="header" data-role="header">
-			<span class="open left"><a href="#panel-01">&#61641;</a></span>
-            <span class="title">IberoBus</span>
-		</div>
-        <div class="content" data-role="content">
-            <h3>Presentación de la Empresa</h3>
-            <p>Creaciones Inteligentes es una empresa que se enfoca en el desarrollo de soluciones innovadoras, con alto desarrollo de software, que busca facilitar la vida diaria de las personas a través de las aplicaciones.</p>
-            <h3>Problema</h3>
-            <p>Los alumnos que utilizan el iberobus no saben el horario exacto de salidas, su ubicación, y no es constante en las horas estipuladas, el problema aumenta ya que alumnos que quisieran utilizar el servicio no lo aprovechan por los problemas ya mencionados.</p>
-            <h3>Objetivo</h3>
-            <p>Desarrollar un sistema en donde los alumnos de la universidad iberoamericana puebla conozcan la ubicación del iberobus en tiempo real, horarios, y ruta, y que si el servicio lo van a utilizar puedan hacer paradas a través de su dispositivo.</p>
+
+        <div data-role="content">
+            <p> Window content </p>
         </div>
-	</div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+    var html = "";
+    html+= "<div id='footer' class='ui-bar-a ui-footer' data-position='fixed' data-role='footer'>";
+    html+=   "<div id='navbar' data-role='navbar'>";
+    html+=     "<ul>";
+    html+=       "<li><a href='#'' data-icon='refresh'></a></li>";
+    html+=       "<li><a href='#'' data-icon='info'></a></li>";
+    html+=       "<li><a href='#'' data-icon='delete'></a></li>";
+    html+=       "<li><a href='#'' data-icon='gear'>Configuración</a></li>";
+    html+=     "</ul>";
+    html+=   "</div>";
+    html+= "</div>";
+
+    $("#menu").append (html);
+
+</script>
+
+</div>
 </body>
 </html>
